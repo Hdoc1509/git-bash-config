@@ -38,7 +38,7 @@ mklink C:\Users\your_user\.bash_profile C:\Users\your_user\.config\git-bash\.bas
 
 ## Usage
 
-Once you installed you will be able to use aliases and print messages with some colors.
+Once you installed you will be able to use aliases, print messages with some colors and make symlinks without need of be administrator.
 
 ### Aliases
 
