@@ -53,9 +53,10 @@ dev # cd /path/to/development-folder
 - For `Neovim GUI's`:
 
 ```sh
-nv  # open neovim in terminal
-nvq # open nvim-qt
-nvd # open neovide
+nv     # open neovim in terminal
+nvq    # open nvim-qt
+nvq-nb # open nvim-qt without blocking git-bash
+nvd    # open neovide
 ```
 
 - For `Git` commands:
@@ -68,6 +69,7 @@ ga   # git add
 gaa  # git add .
 gc   # git commit
 gcm  # git commit -m
+gmv  # git mv
 gp   # git push
 gpl  # git pull
 gl   # git log
@@ -96,7 +98,7 @@ npm-g-pkgs # list of global dependencies
 ```sh
 src-bashrc # source your $HOME/.bashrc file
 new        # open a new git-bash window in current directory
-las        # just ls -a
+lsa        # just ls -a
 ```
 
 ### Color messages
