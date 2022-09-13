@@ -4,6 +4,7 @@ alias dev='cd /d/dev'
 # Neovim GUI's
 alias nv='winpty nvim'
 alias nvq='nvim-qt'
+alias nvq-nb='f() { nvim-qt -- -p $@ & /dev/null; unset -f f; }; f'
 alias nvd='neovide'
 
 # Git commands
