@@ -1,0 +1,12 @@
+ThemeFile=xterm
+Font=FiraCode NF
+FontHeight=12
+FontWeight=400
+Transparency=off
+CursorColour=0,176,176
+CursorType=block
+OpaqueWhenFocused=no
+FontSmoothing=default
+Scrollbar=none
+Term=xterm
+FontIsBold=no
