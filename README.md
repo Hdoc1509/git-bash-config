@@ -22,11 +22,12 @@ degit Hdoc1509/git-bash-config
 
 Be sure to run commands as administrator or that your session has the necessary permissions.
 
-In UNIX and Windows via `git-bash`:
+In UNIX via integrated terminal and Windows via `git-bash`:
 
 ```sh
 ln -s ~/.config/git-bash/.basrc ~/.bashrc
 ln -s ~/.config/git-bash/.bash_profile ~/.bash_profile
+ln -s ~/.config/git-bash/.minttyrc ~/.minttyrc
 ```
 
 In Windows via `cmd` or `powershell`:
@@ -34,6 +35,7 @@ In Windows via `cmd` or `powershell`:
 ```sh
 mklink C:\Users\your_user\.bashrc C:\Users\your_user\.config\git-bash\.bashrc
 mklink C:\Users\your_user\.bash_profile C:\Users\your_user\.config\git-bash\.bash_profile
+mklink C:\Users\your_user\.minttyrc C:\Users\your_user\.config\git-bash\.minttyrc
 ```
 
 ## Usage
