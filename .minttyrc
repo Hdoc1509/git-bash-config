@@ -1,4 +1,4 @@
-ThemeFile=xterm
+ThemeFile=helmholtz
 Font=FiraCode NF
 FontHeight=12
 FontWeight=400
@@ -8,5 +8,5 @@ CursorType=block
 OpaqueWhenFocused=no
 FontSmoothing=default
 Scrollbar=none
-Term=xterm
+Term=xterm-256color
 FontIsBold=no
