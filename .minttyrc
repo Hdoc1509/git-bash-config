@@ -10,3 +10,4 @@ FontSmoothing=default
 Scrollbar=none
 Term=xterm-256color
 FontIsBold=no
+ScrollbackLines=100
