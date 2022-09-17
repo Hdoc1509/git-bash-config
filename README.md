@@ -138,3 +138,7 @@ Available colors:
 
 Colors where taken from [jonsuh/.bash_profile](https://gist.github.com/jonsuh/3c89c004888dfc7352be)
 
+### Custom Prompt
+
+This configuration uses [oh-my-posh](https://ohmyposh.dev/) as custom prompt and `blue-owl` as selected [theme](https://ohmyposh.dev/docs/themes), but you can change it in `theme.sh`
+
