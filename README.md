@@ -2,27 +2,27 @@
 
 ## Installation
 
-Clone repository into your user-specific configurations folder `$HOME/.config` is the same as `~/.config`.
+Clone repository into your user-specific configurations folder: `$HOME/.config`.
 
-Then symlink `$HOME/.bashrc` and `$HOME/.bash_profile` to its respective files in `$HOME/.config/git-bash`.
+Then symlink `$HOME/.bashrc`, `$HOME/.bash_profile` and `$HOME/.minttyrc` to its respective files in `$HOME/.config/git-bash`. You can see it in [Symlink](#symlink) section.
 
-Via `git clone`:
+- Via `git clone`:
 
 ```sh
-git clone --depth 1 https://github.com/Hdoc1509/git-bash-config.git
+git clone --depth 1 https://github.com/Hdoc1509/git-bash-config.git ~/.config/git-bash
 ```
 
-Via [tiged](https://github.com/tiged/tiged) (degit):
+- Via [tiged](https://github.com/tiged/tiged) (degit):
 
 ```sh
-degit Hdoc1509/git-bash-config
+degit Hdoc1509/git-bash-config ~/.config/git-bash
 ```
 
 ## Symlink
 
-Be sure to run commands as administrator or that your session has the necessary permissions.
+Be sure to open a terminal as administrator or that your session has the necessary permissions.
 
-In UNIX via integrated terminal and Windows via `git-bash`:
+- In UNIX systems:
 
 ```sh
 ln -s ~/.config/git-bash/.basrc ~/.bashrc
@@ -30,12 +30,12 @@ ln -s ~/.config/git-bash/.bash_profile ~/.bash_profile
 ln -s ~/.config/git-bash/.minttyrc ~/.minttyrc
 ```
 
-In Windows via `cmd` or `powershell`:
+- In Windows via `cmd`:
 
 ```sh
-mklink C:\Users\your_user\.bashrc C:\Users\your_user\.config\git-bash\.bashrc
-mklink C:\Users\your_user\.bash_profile C:\Users\your_user\.config\git-bash\.bash_profile
-mklink C:\Users\your_user\.minttyrc C:\Users\your_user\.config\git-bash\.minttyrc
+mklink %userprofile%\.bashrc %userprofile%\.config\git-bash\.bashrc
+mklink %userprofile%\.bash_profile %userprofile%\.config\git-bash\.bash_profile
+mklink %userprofile%\.minttyrc %userprofile%\.config\git-bash\.minttyrc
 ```
 
 ## Usage
