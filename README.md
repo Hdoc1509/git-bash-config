@@ -25,17 +25,17 @@ Be sure to open a terminal as administrator or that your session has the necessa
 - In UNIX systems:
 
 ```sh
-ln -s ~/.config/git-bash/.basrc ~/.bashrc
+ln -s ~/.config/git-bash/.basrc        ~/.bashrc
 ln -s ~/.config/git-bash/.bash_profile ~/.bash_profile
-ln -s ~/.config/git-bash/.minttyrc ~/.minttyrc
+ln -s ~/.config/git-bash/.minttyrc     ~/.minttyrc
 ```
 
 - In Windows via `cmd`:
 
 ```sh
-mklink %userprofile%\.bashrc %userprofile%\.config\git-bash\.bashrc
+mklink %userprofile%\.bashrc       %userprofile%\.config\git-bash\.bashrc
 mklink %userprofile%\.bash_profile %userprofile%\.config\git-bash\.bash_profile
-mklink %userprofile%\.minttyrc %userprofile%\.config\git-bash\.minttyrc
+mklink %userprofile%\.minttyrc     %userprofile%\.config\git-bash\.minttyrc
 ```
 
 ## Usage
@@ -93,8 +93,10 @@ update-pip
 - For `NPM` commands:
 
 ```sh
-npm-pkgs   # list of dependencies in current folder
+npmt       # npm test
+npmdev     # npm run dev
 npm-g-pkgs # list of global dependencies
+npm-pkgs   # list of dependencies in current folder
 ```
 
 - For `git-bash`:
