@@ -64,22 +64,24 @@ nvd    # open neovide
 - For `Git` commands:
 
 ```sh
-gst  # git status
-gsts # git status --short
-gd   # git diff
 ga   # git add
 gaa  # git add .
 gc   # git commit
 gcm  # git commit -m
+gcma # git commit --amend -m
+gd   # git diff
+gdom # git diff origin/master
+gl   # git log
+glo  # git log --oneline
 gmv  # git mv
 gp   # git push
 gpl  # git pull
-gl   # git log
-glo  # git log --oneline
 grm  # git rm
 grs  # git restore
 grt  # git reset
 grts # git reset --soft
+gst  # git status
+gsts # git status --short
 ```
 
 - For `Python` commands:
