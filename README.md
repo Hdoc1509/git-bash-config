@@ -72,7 +72,9 @@ gcma # git commit --amend -m
 gd   # git diff
 gdom # git diff origin/master
 gl   # git log
+gln  # git log -n
 glo  # git log --oneline
+glon # git log --oneline -n
 gmv  # git mv
 gp   # git push
 gpl  # git pull
