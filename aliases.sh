@@ -9,7 +9,7 @@ alias nvd='neovide'
 
 # Git commands
 alias ga='git add'
-alias gaa='ga .'
+alias gaa='ga --all'
 alias gc='git commit'
 alias gcm='gc -m'
 alias gcma='gc --amend -m'
