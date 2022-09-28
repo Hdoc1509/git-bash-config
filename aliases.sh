@@ -38,8 +38,8 @@ alias pip-update='py -m pip install --upgrade pip'
 
 # NPM
 alias npm='winpty npm.cmd'
-alias npmt='npm test'
-alias npmdev='npm run dev'
+alias npmDev='npm run dev'
+alias npmDE='npm i -D -E'
 alias npm-pkgs='npm list --depth 0'
 alias npm-g-pkgs='npm-pkgs -g'
 
