@@ -2,6 +2,8 @@
 
 ## Installation
 
+### Cloning
+
 Clone repository into your user-specific configurations folder: `$HOME/.config`.
 
 Then symlink `$HOME/.bashrc`, `$HOME/.bash_profile` and `$HOME/.minttyrc` to its respective files in `$HOME/.config/git-bash`. You can see it in [Symlink](#symlink) section.
@@ -18,7 +20,7 @@ git clone --depth 1 https://github.com/Hdoc1509/git-bash-config.git ~/.config/gi
 degit Hdoc1509/git-bash-config ~/.config/git-bash
 ```
 
-## Symlink
+### Symlink
 
 Be sure to open a terminal as administrator or that your session has the necessary permissions.
 
@@ -52,10 +54,16 @@ You can change aliases in `aliases.sh`.
 dev # cd /path/to/development-folder
 ```
 
-- For `Neovim GUI's`:
+- For `Neovim`:
 
 ```sh
 nv     # open neovim in terminal
+nv-cfg # cd ~/.config/nvim
+```
+
+- For `Neovim GUI's`:
+
+```sh
 nvq    # open nvim-qt
 nvq-nb # open nvim-qt without blocking git-bash
 nvd    # open neovide
@@ -65,10 +73,10 @@ nvd    # open neovide
 
 ```sh
 ga   # git add
-gaa  # git add .
+gaa  # git add --all
 gc   # git commit
 gcm  # git commit -m
-gcma # git commit --amend -m
+gcam # git commit --amend -m
 gd   # git diff
 gdom # git diff origin/master
 gl   # git log
@@ -89,14 +97,15 @@ gsts # git status --short
 - For `Python` commands:
 
 ```
-update-pip
+pip-update
 ```
 
 - For `NPM` commands:
 
 ```sh
-npmt       # npm test
-npmdev     # npm run dev
+npmDev     # npm run dev
+npmDE      # npm i -D -E
+npmT       # npm test
 npm-g-pkgs # list of global dependencies
 npm-pkgs   # list of dependencies in current folder
 ```
@@ -107,6 +116,7 @@ npm-pkgs   # list of dependencies in current folder
 src-bashrc # source your $HOME/.bashrc file
 new        # open a new git-bash window in current directory
 lsa        # just ls -a
+gb-cfg     # cd ~/.config/git-bash
 ```
 
 ### Color messages
