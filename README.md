@@ -166,3 +166,8 @@ Colors where taken from [jonsuh/.bash_profile](https://gist.github.com/jonsuh/3c
 
 This configuration uses [oh-my-posh](https://ohmyposh.dev/) as custom prompt and `blue-owl` as selected [theme](https://ohmyposh.dev/docs/themes), but you can change it in `theme.sh`
 
+## My other software configurations
+
+- [nvim-config-vim](https://github.com/Hdoc1509/nvim-config-vim)
+- [wezterm-config](https://github.com/Hdoc1509/wezterm-config)
+
