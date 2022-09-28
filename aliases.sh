@@ -44,6 +44,12 @@ alias npmT='npm test'
 alias npm-pkgs='npm list --depth 0'
 alias npm-g-pkgs='npm-pkgs -g'
 
+# npm-check-updates
+alias ncu='winpty ncu.cmd'
+
+# vitejs
+alias vite='f() { npm create vite $2 -- --template $1; unset -f f;  }; f'
+
 # Git bash
 alias src-bashrc='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
