@@ -1,8 +1,11 @@
 # Dev projects
 alias dev='cd /d/dev'
 
-# Neovim GUI's
+# Neovim
 alias nv='winpty nvim'
+alias nv-cfg='cd ~/.config/nvim'
+
+# Neovim GUI's
 alias nvq='nvim-qt'
 alias nvq-nb='f() { nvq -- -p $@ & /dev/null; unset -f f; }; f'
 alias nvd='neovide'
