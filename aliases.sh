@@ -50,3 +50,6 @@ alias new='git-bash & > /dev/null'
 alias lsa='ls -a'
 alias gb-cfg='cd ~/.config/git-bash'
 
+# Wezterm
+alias wt-cfg='cd ~/.config/wezterm'
+
