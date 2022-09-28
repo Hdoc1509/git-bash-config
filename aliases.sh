@@ -40,6 +40,7 @@ alias pip-update='py -m pip install --upgrade pip'
 alias npm='winpty npm.cmd'
 alias npmDev='npm run dev'
 alias npmDE='npm i -D -E'
+alias npmT='npm test'
 alias npm-pkgs='npm list --depth 0'
 alias npm-g-pkgs='npm-pkgs -g'
 
