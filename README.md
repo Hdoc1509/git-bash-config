@@ -110,6 +110,12 @@ npm-g-pkgs # list of global dependencies
 npm-pkgs   # list of dependencies in current folder
 ```
 
+- For `vitejs`:
+
+```sh
+vite your-template your-directory
+```
+
 - For `git-bash`:
 
 ```sh
@@ -117,6 +123,12 @@ src-bashrc # source your $HOME/.bashrc file
 new        # open a new git-bash window in current directory
 lsa        # just ls -a
 gb-cfg     # cd ~/.config/git-bash
+```
+
+- For [`wezterm`](https://wezfurlong.org/wezterm/):
+
+```sh
+wt-cfg # cd ~/.config/wezterm
 ```
 
 ### Color messages
