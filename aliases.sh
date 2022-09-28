@@ -34,7 +34,7 @@ alias gst='git status'
 alias gsts='gst --short'
 
 # Python
-alias update-pip='py -m pip install --upgrade pip'
+alias pip-update='py -m pip install --upgrade pip'
 
 # NPM
 alias npm='winpty npm.cmd'
