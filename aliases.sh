@@ -48,4 +48,5 @@ alias npm-g-pkgs='npm-pkgs -g'
 alias src-bashrc='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
 alias lsa='ls -a'
+alias gb-cfg='cd ~/.config/git-bash'
 
