@@ -84,6 +84,7 @@ gln  # git log -n
 glo  # git log --oneline
 glon # git log --oneline -n
 gmv  # git mv
+go   # git open
 gp   # git push
 gpl  # git pull
 grm  # git rm
@@ -93,6 +94,8 @@ grts # git reset --soft
 gst  # git status
 gsts # git status --short
 ```
+
+**NOTE:** For use `go` alias you will need to install [`git-open`](https://github.com/paulirish/git-open)
 
 - For `Python` commands:
 
