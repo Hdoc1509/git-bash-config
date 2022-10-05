@@ -116,7 +116,7 @@ npm-pkgs   # list of dependencies in current folder
 - For `vitejs`:
 
 ```sh
-vite your-template your-directory
+vite template target-directory
 ```
 
 - For `git-bash`:
