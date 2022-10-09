@@ -3,11 +3,11 @@ alias dev='cd /d/dev'
 
 # Neovim
 alias nv='winpty nvim'
-alias nv-cfg='cd ~/.config/nvim'
+alias nvCfg='cd ~/.config/nvim'
 
 # Neovim GUI's
 alias nvq='nvim-qt'
-alias nvq-nb='f() { nvq -- -p $@ & /dev/null; unset -f f; }; f'
+alias nvqNb='f() { nvq -- -p $@ & /dev/null; unset -f f; }; f'
 alias nvd='neovide'
 
 # Git commands
@@ -35,15 +35,15 @@ alias gst='git status'
 alias gsts='gst --short'
 
 # Python
-alias pip-update='py -m pip install --upgrade pip'
+alias pipUpdate='py -m pip install --upgrade pip'
 
 # NPM
 alias npm='winpty npm.cmd'
 alias npmDev='npm run dev'
 alias npmDE='npm i -D -E'
 alias npmT='npm test'
-alias npm-pkgs='npm list --depth 0'
-alias npm-g-pkgs='npm-pkgs -g'
+alias npmPkgs='npm list --depth 0'
+alias npmGPkgs='npm-pkgs -g'
 
 # npm-check-updates
 alias ncu='winpty ncu.cmd'
@@ -52,11 +52,11 @@ alias ncu='winpty ncu.cmd'
 alias vite='f() { npm create vite $2 -- --template $1; unset -f f;  }; f'
 
 # Git bash
-alias src-bashrc='source ~/.bashrc'
+alias srcBashrc='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
 alias lsa='ls -a'
-alias gb-cfg='cd ~/.config/git-bash'
+alias gbCfg='cd ~/.config/git-bash'
 
 # Wezterm
-alias wt-cfg='cd ~/.config/wezterm'
+alias wtCfg='cd ~/.config/wezterm'
 
