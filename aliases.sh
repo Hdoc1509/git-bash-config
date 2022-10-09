@@ -52,7 +52,7 @@ alias ncu='winpty ncu.cmd'
 alias vite='f() { npm create vite $2 -- --template $1; unset -f f;  }; f'
 
 # Git bash
-alias srcBashrc='source ~/.bashrc'
+alias srcBash='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
 alias lsa='ls -a'
 alias gbCfg='cd ~/.config/git-bash'
