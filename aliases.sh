@@ -43,7 +43,7 @@ alias npmDev='npm run dev'
 alias npmDE='npm i -D -E'
 alias npmT='npm test'
 alias npmPkgs='npm list --depth 0'
-alias npmGPkgs='npm-pkgs -g'
+alias npmGPkgs='npmPkgs -g'
 
 # npm-check-updates
 alias ncu='winpty ncu.cmd'
