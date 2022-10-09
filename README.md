@@ -57,16 +57,16 @@ dev # cd /path/to/development-folder
 - For `Neovim`:
 
 ```sh
-nv     # open neovim in terminal
-nv-cfg # cd ~/.config/nvim
+nv    # open neovim in terminal
+nvCfg # cd ~/.config/nvim
 ```
 
 - For `Neovim GUI's`:
 
 ```sh
-nvq    # open nvim-qt
-nvq-nb # open nvim-qt without blocking git-bash
-nvd    # open neovide
+nvq   # open nvim-qt
+nvqNb # open nvim-qt without blocking git-bash
+nvd   # open neovide
 ```
 
 - For `Git` commands:
@@ -100,17 +100,17 @@ gsts # git status --short
 - For `Python` commands:
 
 ```
-pip-update
+pipUpdate
 ```
 
 - For `NPM` commands:
 
 ```sh
-npmDev     # npm run dev
-npmDE      # npm i -D -E
-npmT       # npm test
-npm-g-pkgs # list of global dependencies
-npm-pkgs   # list of dependencies in current folder
+npmDev   # npm run dev
+npmDE    # npm i -D -E
+npmT     # npm test
+npmGPkgs # list of global dependencies
+npmPkgs  # list of dependencies in current folder
 ```
 
 - For `vitejs`:
@@ -122,16 +122,16 @@ vite template target-directory
 - For `git-bash`:
 
 ```sh
-src-bashrc # source your $HOME/.bashrc file
-new        # open a new git-bash window in current directory
-lsa        # just ls -a
-gb-cfg     # cd ~/.config/git-bash
+srcBash # source your $HOME/.bashrc file
+new     # open a new git-bash window in current directory
+lsa     # just ls -a
+gbCfg   # cd ~/.config/git-bash
 ```
 
 - For [`wezterm`](https://wezfurlong.org/wezterm/):
 
 ```sh
-wt-cfg # cd ~/.config/wezterm
+wtCfg # cd ~/.config/wezterm
 ```
 
 ### Color messages
