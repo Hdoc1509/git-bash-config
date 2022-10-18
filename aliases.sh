@@ -54,8 +54,13 @@ alias vite='f() { npm create vite $2 -- --template $1; unset -f f;  }; f'
 # Git bash
 alias srcBash='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
-alias lsa='ls -a'
 alias gbCfg='cd ~/.config/git-bash'
+
+# Shell
+alias cls='clear'
+alias ls='ls -F'
+alias ll='ls -lh'
+alias lsa='ls -a'
 
 # Wezterm
 alias wtCfg='cd ~/.config/wezterm'
