@@ -58,7 +58,7 @@ alias gbCfg='cd ~/.config/git-bash; nvd .'
 
 # Shell
 alias cls='clear'
-alias ls='ls -F'
+alias ls='ls -F --color'
 alias ll='ls -lh'
 alias lsa='ls -a'
 
