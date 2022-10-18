@@ -3,7 +3,7 @@ alias dev='cd /d/dev'
 
 # Neovim
 alias nv='winpty nvim'
-alias nvCfg='cd ~/.config/nvim'
+alias nvCfg='cd ~/.config/nvim; nvd .'
 
 # Neovim GUI's
 alias nvq='nvim-qt'
@@ -54,7 +54,7 @@ alias vite='f() { npm create vite $2 -- --template $1; unset -f f;  }; f'
 # Git bash
 alias srcBash='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
-alias gbCfg='cd ~/.config/git-bash'
+alias gbCfg='cd ~/.config/git-bash; nvd .'
 
 # Shell
 alias cls='clear'
@@ -63,5 +63,5 @@ alias ll='ls -lh'
 alias lsa='ls -a'
 
 # Wezterm
-alias wtCfg='cd ~/.config/wezterm'
+alias wtCfg='cd ~/.config/wezterm; nvd .'
 
