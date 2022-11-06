@@ -1,3 +1,5 @@
+source ~/.config/git-bash/colors/colors.sh
+
 # Source theme
 theme=~/.config/git-bash/colors/theme.sh
 if [[ -f $theme ]]; then
