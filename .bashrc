@@ -1,13 +1,5 @@
-source ~/.config/git-bash/colors/colors.sh
-
-# Source theme
-theme=~/.config/git-bash/colors/theme.sh
-if [[ -f $theme ]]; then
-  echo -ne "${lightpurple}Sourcing${nocolor} ${lightcyan}colors/${theme##*/}${nocolor} ... "
-  source $theme && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
-else
-  echo "${orange}Warning: Some problem with \"$file\""
-fi
+# Source colors and theme
+for file in ~/.config/git-bash/colors/*.sh; do source $file; done
 
 # Source editor functions
 echo -e "${lightblue}Sourcing editors functions ${nocolor}... "
