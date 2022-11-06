@@ -1,14 +1,11 @@
+# Deault editor
+editor='nvd'
+
 # Dev projects
 alias dev='cd /d/dev'
 
 # Neovim
-alias nv='winpty nvim'
-alias nvCfg='cd ~/.config/nvim; nvd .'
-
-# Neovim GUI's
-alias nvq='nvim-qt'
-alias nvqNb='f() { nvq -- -p $@ & /dev/null; unset -f f; }; f'
-alias nvd='neovide'
+alias nvCfg="cd ~/.config/nvim; ${editor} ."
 
 # Git commands
 alias ga='git add'
@@ -55,14 +52,16 @@ alias vite='f() { npm create vite $2 -- --template $1; unset -f f;  }; f'
 # Git bash
 alias srcBash='source ~/.bashrc'
 alias new='git-bash & > /dev/null'
-alias gbCfg='cd ~/.config/git-bash; nvd .'
+alias gbCfg="cd ~/.config/git-bash; ${editor} ."
 
 # Shell
+# TODO: Add 'catbat' and 'lsd' to requirements
+alias cat='bat'
 alias cls='clear'
-alias ls='ls -F --color'
+alias ls='lsd -F --color always --icon always'
 alias ll='ls -lh'
 alias lsa='ls -a'
 
 # Wezterm
-alias wtCfg='cd ~/.config/wezterm; nvd .'
+alias wtCfg="cd ~/.config/wezterm; ${editor} ."
 
