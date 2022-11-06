@@ -1,13 +1,14 @@
 # Source theme
-if [[ -f ~/.config/git-bash/colors/theme.sh ]]; then
-  echo -ne "${lightpurple}Sourcing${nocolor} ${lightcyan}colors/${file##*/}${nocolor} ... "
-  source $file && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
+theme=~/.config/git-bash/colors/theme.sh
+if [[ -f $theme ]]; then
+  echo -ne "${lightpurple}Sourcing${nocolor} ${lightcyan}colors/${theme##*/}${nocolor} ... "
+  source $theme && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
 else
   echo "${orange}Warning: Some problem with \"$file\""
 fi
 
 # Source editor functions
-echo -e "${lightblue}Sourcing editors functions ... "
+echo -e "${lightblue}Sourcing editors functions ${nocolor}... "
 
 for file in ~/.config/git-bash/editors/*.sh; do
   if [[ -f $file ]]; then
@@ -18,7 +19,7 @@ for file in ~/.config/git-bash/editors/*.sh; do
   fi
 done
 
-echo -e "${lightblue}Sourced editors functions succesfully"
+echo -e "${lightblue}Sourced editors functions ${lightgreen}succesfully"
 
 # Source aliases
 for file in ~/.config/git-bash/aliases/*.sh; do
