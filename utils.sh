@@ -11,3 +11,5 @@ source_files_in () {
     fi
   done
 }
+
+source_config () { source_files_in ~/.config/git-bash/$1 $1; }
