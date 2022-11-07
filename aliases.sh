@@ -4,4 +4,4 @@ echo -e "${lightred}Sourcing aliases ..."
 # Variables that can be accessed by aliases
 editor='nvd'
 
-source_files_in "aliases"
+source_config "aliases"
