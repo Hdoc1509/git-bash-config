@@ -1,15 +1,3 @@
-source_files_in () {
-  local folder=$1;
-  local prefix=$2;
-
-  for file in $folder/*.sh; do
-    if [[ -f $file ]]; then
-      echo -ne "${lightpurple}Sourcing${nocolor} ${lightcyan}${prefix}/${file##*/}${nocolor} ... "
-      source $file && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
-    else
-      echo "${orange}Warning: Some problem with \"$file\""
-    fi
-  done
-}
+source ~/.config/git-bash/shell-fns/utils.sh
 
 source_config () { source_files_in ~/.config/git-bash/$1 $1; }
