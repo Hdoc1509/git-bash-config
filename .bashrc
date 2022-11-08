@@ -1,11 +1,14 @@
 # Source colors and theme
-for file in ~/.config/git-bash/colors/*.sh; do source $file; done
+source ~/.config/git-bash/shell-fns/colors.sh
+source ~/.config/git-bash/theme.sh
 
 # Source utils
 source ~/.config/git-bash/utils.sh
 
-# Source editor functions
-source ~/.config/git-bash/editors.sh
+shell_plugins=( dev git git_bash neovim npm npm_check_updates python shell vitejs wezterm  )
 
-# Source aliases
-source ~/.config/git-bash/aliases.sh
+for plugin in ${shell_plugins[@]}; do
+  echo -ne "${lightpurple}Sourcing plugin ${lightcyan}${plugin}${nocolor} ... "
+  source ~/.config/git-bash/shell-fns/plugins/$plugin.sh && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
+done
+

@@ -18,3 +18,6 @@ nv () {
 nvq () { eval "nvim-qt -- $(nv_flag "$@")"; }
 nvqNb () { eval "nvim-qt -- $(nv_flag "@") & /dev/null"; }
 nvd () { eval "neovide --multigrid -- $(nv_flag "$@")"; }
+
+# Neovim Aliases
+alias nvCfg="cd ~/.config/nvim; ${editor} ."

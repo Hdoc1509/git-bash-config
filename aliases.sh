@@ -1,7 +1,0 @@
-# Source scripts in 'aliases' folder
-echo -e "${lightred}Sourcing aliases ..."
-
-# Variables that can be accessed by aliases
-editor='nvd'
-
-source_config "aliases"
