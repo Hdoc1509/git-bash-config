@@ -5,6 +5,7 @@ source ~/.config/git-bash/theme.sh
 # Source utils
 source ~/.config/git-bash/utils.sh
 
+user_editor='nvd'
 shell_plugins=( dev git git_bash neovim npm npm_check_updates python shell vitejs wezterm  )
 
 for plugin in ${shell_plugins[@]}; do
