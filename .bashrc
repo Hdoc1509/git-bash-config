@@ -1,16 +1,30 @@
-# Source colors and theme
-source ~/.config/git-bash/shell-fns/colors.sh
-source ~/.config/git-bash/theme.sh
+#!/bin/bash
 
-# Source utils
+# Enable SymLink
+export MSYS=winsymlinks:nativestrict
+
+# shellcheck source=utils.sh
 source ~/.config/git-bash/utils.sh
 
-user_editor='nvd'
-user_dev_folder='/d/Dev'
-shell_plugins=( dev git git_bash neovim npm npm_check_updates python shell vitejs wezterm  )
+set_custom_theme blue-owl-mod.omp.json
 
-for plugin in ${shell_plugins[@]}; do
-  echo -ne "${lightpurple}Sourcing plugin ${lightcyan}${plugin}${nocolor} ... "
-  source ~/.config/git-bash/shell-fns/plugins/$plugin.sh && echo -e "${lightgreen}done" || echo -e "${red}FAILED"
-done
+export SF_EDITOR='nvd'
+export SF_NV_FLAGS='-c ":FZF --reverse"'
+export SF_DEV_FOLDER=/d/Dev
+export SF_LSD_FLAGS='-F --color always --icon always'
+export SF_CAT='bat'
+export SF_PLUGINS=(
+  cmd_line
+  dev
+  git_bash
+  neovim_gui
+  npm npm_check_updates
+  nvm
+  pip
+  pnpm
+  vitejs
+  wezterm
+)
 
+# shellcheck disable=SC1090
+source ~/.config/shell-fns/main.sh
