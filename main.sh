@@ -3,6 +3,12 @@
 # Enable SymLink
 export MSYS=winsymlinks:nativestrict
 
+# Built-in aliases
+alias gbCfg='cd ~/.config/git-bash; ${SF_EDITOR} .'
+alias gbCfgU='git -C ~/.config/git-bash pull; git -C ~/.config/shell-fns pull'
+alias new='git-bash & > /dev/null'
+alias srcBash='source ~/.bashrc'
+
 # shellcheck source=utils.sh
 source ~/.config/git-bash/utils.sh
 
