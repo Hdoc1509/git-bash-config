@@ -11,7 +11,7 @@ This repository hosts my configuration for `git-bash` that comes bundled with [g
 ## Requirements
 
 - [shell-fns](https://github.com/Hdoc1509/shell-fns#installation)
-- [oh-my-posh](https://ohmyposh.dev)
+- [oh-my-posh](https://ohmyposh.dev/docs/installation/windows#installation) with manuall installation
 
 ## Installation
 
