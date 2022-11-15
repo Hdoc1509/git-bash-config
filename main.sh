@@ -23,7 +23,7 @@ export SF_CAT='bat'
 export SF_PLUGINS=(
   cmd_line
   dev
-  git_bash
+  git
   neovim_gui
   npm npm_check_updates
   nvm
