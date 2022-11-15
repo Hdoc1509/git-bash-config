@@ -6,6 +6,9 @@ export MSYS=winsymlinks:nativestrict
 # shellcheck source=utils.sh
 source ~/.config/git-bash/utils.sh
 
+set_custom_theme blue-owl-mod
+
+# shell-fns plugins
 export SF_EDITOR='nvd'
 export SF_NV_FLAGS='-c ":FZF --reverse"'
 export SF_DEV_FOLDER=/d/Dev
