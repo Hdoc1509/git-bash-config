@@ -17,18 +17,10 @@ This repository hosts my configuration for `git-bash` that comes bundled with [g
 
 ### Cloning
 
-Clone this repository into your user-specific configurations folder: `$HOME/.config`.
-
-- Via `git clone`:
+Clone this repository into your user-specific configurations folder: `$HOME/.config`:
 
 ```sh
 git clone --depth 1 https://github.com/Hdoc1509/git-bash-config.git ~/.config/git-bash
-```
-
-- Via [tiged](https://github.com/tiged/tiged#installation):
-
-```sh
-tiged Hdoc1509/git-bash-config ~/.config/git-bash
 ```
 
 ### Sourcing
@@ -57,19 +49,36 @@ mklink %userprofile%\.minttyrc %userprofile%\.config\git-bash\.minttyrc
 
 All configurations must be placed in `~/.config/git-bash/main.sh` file.
 
-- For set an `oh-my-posh` theme you should use `set_posh_theme` or `set_custom_theme`:
+- For set an `oh-my-posh` theme you should use `set_posh_theme` or `set_custom_theme` functions:
 
 ```sh
 # For oh-my-posh built-in themes
 set_posh_theme tokyonight_storm
 
-# For custom themes
+# For oh-my-posh custom themes
 set_custom_theme blue-owl-mod
 ```
 
 **Note:** [Custom themes](/custom-themes/) have the suffix `-mod`.
 
 - [Configurations for shell-fns](https://github.com/Hdoc1509/shell-fns#usage) must be at the end.
+
+## Update git-bash-config
+
+- Run the following commands for update your local copies of `git-bash-config` and `shell-fns`:
+
+```sh
+git -C ~/.config/git-bash pull
+git -C ~/.config/shell-fns pull
+```
+
+- Or run the following built-in alias:
+
+```sh
+gbCfgU
+```
+
+All updates will take effect after restarting `git-bash`.
 
 ## My other software configurations
 
