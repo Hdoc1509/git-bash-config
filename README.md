@@ -45,6 +45,15 @@ source ~/.bashrc
 mklink %userprofile%\.minttyrc %userprofile%\.config\git-bash\.minttyrc
 ```
 
+## Built-in aliases
+
+| Alias   | Description                                                                                                                                                                                                                |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| gbCfg   | Change directory to `~/.config/git-bash` and open editor setted in `SF_EDITOR` variable                                                                                                                                    |
+| gbCfgU  | Update your local copies of `git-bash-config` and `shell-fns`. You will need to restart `git-bash`                                                                                                                         |
+| new     | Open a new window of `git-bash` in current directory. This alias is affected by [`SF_START_DEV_FOLDER`](https://github.com/Hdoc1509/shell-fns/tree/master/plugins/dev#settings) variable of `dev` plugin from `shell-fns`. |
+| srcBash | Source your `~/.bashrc` file                                                                                                                                                                                               |
+
 ## Customization
 
 All configurations must be placed in `~/.config/git-bash/main.sh` file.
@@ -62,23 +71,6 @@ set_custom_theme blue-owl-mod
 **Note:** [Custom themes](/custom-themes/) have the suffix `-mod`.
 
 - [Configurations for shell-fns](https://github.com/Hdoc1509/shell-fns#usage) must be at the end.
-
-## Update git-bash-config
-
-- Run the following commands for update your local copies of `git-bash-config` and `shell-fns`:
-
-```sh
-git -C ~/.config/git-bash pull
-git -C ~/.config/shell-fns pull
-```
-
-- Or run the following built-in alias:
-
-```sh
-gbCfgU
-```
-
-All updates will take effect after restarting `git-bash`.
 
 ## My other software configurations
 
