@@ -15,7 +15,7 @@ set_custom_theme blue-owl-mod-2
 
 # shell-fns plugins
 export SF_EDITOR='nvd'
-export SF_NV_FLAGS='-c ":FZF --reverse"'
+export SF_NV_FLAGS='-c ":FZF"'
 export SF_DEV_FOLDER=/d/Dev
 export SF_LSD_FLAGS='-F --color always --icon always'
 export SF_CAT='bat'
