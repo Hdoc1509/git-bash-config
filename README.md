@@ -4,12 +4,14 @@ This repository hosts my configuration for `git-bash` that comes bundled with [g
 
 ## Features
 
-- Enable symlink
+- `Mintty` as terminal emulator
+- Enabled symlink
 - Custom prompt themes via [oh-my-posh](https://ohmyposh.dev/docs/themes)
 - Plugins, aliases and functions from [shell-fns](https://github.com/Hdoc1509/shell-fns#plugins)
 
 ## Requirements
 
+- [git-for-windows](https://gitforwindows.org/) with `mintty` as terminal emulator.
 - [shell-fns](https://github.com/Hdoc1509/shell-fns#installation)
 - [oh-my-posh](https://ohmyposh.dev/docs/installation/windows#installation) with manual installation
 
@@ -31,8 +33,6 @@ git clone --depth 1 https://github.com/Hdoc1509/git-bash-config.git ~/.config/gi
 source ~/.config/git-bash/main.sh
 ```
 
-**NOTE:** [Custom themes](/custom-themes/) have the suffix `-mod`.
-
 - Be sure to source `~/.bashrc` file from your `~/.bash_profile` file:
 
 ```sh
@@ -47,12 +47,11 @@ mklink %userprofile%\.minttyrc %userprofile%\.config\git-bash\.minttyrc
 
 ## Built-in aliases
 
-| Alias   | Description                                                                                                                                                                                                                |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| gbCfg   | Change directory to `~/.config/git-bash` and open editor setted in `SF_EDITOR` variable                                                                                                                                    |
-| gbCfgU  | Update your local copies of `git-bash-config` and `shell-fns`. You will need to restart `git-bash`                                                                                                                         |
-| new     | Open a new window of `git-bash` in current directory. This alias is affected by [`SF_START_DEV_FOLDER`](https://github.com/Hdoc1509/shell-fns/tree/master/plugins/dev#settings) variable of `dev` plugin from `shell-fns`. |
-| srcBash | Source your `~/.bashrc` file                                                                                                                                                                                               |
+| Alias   | Description                                                                                        |
+| ------- | -------------------------------------------------------------------------------------------------- |
+| gbCf    | Change directory to `~/.config/git-bash` and open editor setted in `SF_EDITOR` variable            |
+| gbCfU   | Update your local copies of `git-bash-config` and `shell-fns`. You will need to restart `git-bash` |
+| srcBash | Source your `~/.bashrc` file                                                                       |
 
 ## Customization
 
@@ -70,7 +69,7 @@ set_custom_theme blue-owl-mod
 
 **Note:** [Custom themes](/custom-themes/) have the suffix `-mod`.
 
-- [Configurations for shell-fns](https://github.com/Hdoc1509/shell-fns#usage) must be at the end.
+- [Configurations for shell-fns](https://github.com/Hdoc1509/shell-fns#usage) must be at the end of `main.sh`.
 
 ## My other software configurations
 
