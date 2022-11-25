@@ -11,7 +11,7 @@ alias srcBash='source ~/.bashrc'
 # shellcheck source=utils.sh
 source ~/.config/git-bash/utils.sh
 
-set_custom_theme blue-owl-mod
+set_custom_theme blue-owl-mod-2
 
 # shell-fns plugins
 export SF_EDITOR='nvd'
