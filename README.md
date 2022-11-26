@@ -14,6 +14,7 @@ This repository hosts my configuration for `git-bash` that comes bundled with [g
 - [git-for-windows](https://gitforwindows.org/) with `mintty` as terminal emulator.
 - [shell-fns](https://github.com/Hdoc1509/shell-fns#installation)
 - [oh-my-posh](https://ohmyposh.dev/docs/installation/windows#installation) with manual installation
+- `FiraCode Nerd Font` or another [Nerd font](https://github.com/ryanoasis/nerd-fonts/releases/latest)
 
 ## Installation
 
@@ -55,9 +56,9 @@ mklink %userprofile%\.minttyrc %userprofile%\.config\git-bash\.minttyrc
 
 ## Customization
 
-All configurations must be placed in `~/.config/git-bash/main.sh` file.
+All configurations related to `prompt-theme` and `shell-fns plugins` must be placed in `~/.config/git-bash/main.sh` file.
 
-- For set an `oh-my-posh` theme you should use `set_posh_theme` or `set_custom_theme` functions:
+- For set an `oh-my-posh`, theme you should use `set_posh_theme` or `set_custom_theme` functions:
 
 ```sh
 # For oh-my-posh built-in themes
@@ -70,6 +71,8 @@ set_custom_theme blue-owl-mod
 **Note:** [Custom themes](/custom-themes/) have the suffix `-mod`.
 
 - [Configurations for shell-fns](https://github.com/Hdoc1509/shell-fns#usage) must be at the end of `main.sh`.
+
+Options for `Mintty` must be setted in `.minttyrc` file.
 
 ## My other software configurations
 
