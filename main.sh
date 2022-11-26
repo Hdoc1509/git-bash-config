@@ -29,7 +29,6 @@ export SF_PLUGINS=(
   pip
   pnpm
   vitejs
-  wezterm
 )
 
 # shellcheck disable=SC1090
