@@ -1,3 +1,7 @@
+# Archived
+
+I moved my configuration for `bash` and `zsh` to my [dotfiles repo](https://github.com/Hdoc1509/dotfiles)
+
 # git-bash-config
 
 This repository hosts my configuration for `git-bash` that comes bundled with [git-for-windows](https://gitforwindows.org/), so this configuration is only for Windows Systems.
